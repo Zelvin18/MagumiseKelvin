@@ -150,18 +150,52 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/* ===== CONTACT FORM ===== */
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+/* ===== CONTACT FORM — Formspree ===== */
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', async function(e) {
   e.preventDefault();
-  const btn = this.querySelector('.form-submit span');
-  const original = btn.textContent;
-  btn.textContent = 'Message Sent ✓';
-  this.querySelector('.form-submit').style.background = 'var(--accent)';
-  setTimeout(() => {
-    btn.textContent = original;
-    this.querySelector('.form-submit').style.background = '';
-    this.reset();
-  }, 3000);
+
+  const btn = this.querySelector('.form-submit');
+  const btnText = btn.querySelector('span');
+  const originalText = btnText.textContent;
+
+  // Loading state
+  btnText.textContent = 'Sending...';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+
+  try {
+    const response = await fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      // Success state
+      btnText.textContent = 'Message Sent ✓';
+      btn.style.background = '#16a34a';
+      btn.style.opacity = '1';
+      this.reset();
+      setTimeout(() => {
+        btnText.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (err) {
+    // Error state
+    btnText.textContent = 'Failed — try emailing directly';
+    btn.style.background = '#dc2626';
+    btn.style.opacity = '1';
+    setTimeout(() => {
+      btnText.textContent = originalText;
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 4000);
+  }
 });
 
 /* ===== DOWNLOAD CV — handled by native anchor tag ===== */
