@@ -164,14 +164,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   }, 3000);
 });
 
-/* ===== DOWNLOAD CV ===== */
-document.getElementById('downloadCV').addEventListener('click', function(e) {
-  e.preventDefault();
-  // Opens mailto as fallback since no CV file is present
-  const link = document.createElement('a');
-  link.href = 'mailto:magumisekelvin2023@gmail.com?subject=CV Request&body=Hi Kelvin, I would like to request your CV.';
-  link.click();
-});
+/* ===== DOWNLOAD CV — handled by native anchor tag ===== */
 
 /* ===== PARALLAX HERO ORBS ===== */
 document.addEventListener('mousemove', e => {
