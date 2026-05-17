@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelvin Magumise — Software Engineer & Entrepreneur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-text">KM</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">KM<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to select projects
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line" data-text="Kelvin">Kelvin</span>
+        <span class="name-line accent" data-text="Magumise">Magumise</span>
+      </h1>
+      <p class="hero-sub">Software Engineer &nbsp;·&nbsp; Web Developer &nbsp;·&nbsp; Entrepreneur</p>
+      <p class="hero-desc">I design and engineer digital products that perform — combining sharp UI, solid architecture, and business thinking. From concept to deployment, I build things that work and look the part.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <span>See the Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+        <a href="#" class="btn btn-outline" id="downloadCV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-label">Projects Deployed</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="1000">0</span><span class="stat-label">Units Sold</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Years Building</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <div class="hero-img-ring ring1"></div>
+        <div class="hero-img-ring ring2"></div>
+        <div class="hero-img-ring ring3"></div>
+        <img src="Magumise Kelvin.jpeg" alt="Kelvin Magumise" class="hero-img" />
+        <div class="hero-img-glow"></div>
+      </div>
+      <div class="floating-card card1">
+        <div class="fc-icon">⚡</div>
+        <div class="fc-text"><strong>React.js</strong><span>Frontend</span></div>
+      </div>
+      <div class="floating-card card2">
+        <div class="fc-icon">🚀</div>
+        <div class="fc-text"><strong>Next.js</strong><span>Full Stack</span></div>
+      </div>
+      <div class="floating-card card3">
+        <div class="fc-icon">🎨</div>
+        <div class="fc-text"><strong>UI/UX</strong><span>Design</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">Not just a developer —<br/><span class="accent">a builder of things</span></h2>
+          <p class="about-text">Kelvin Magumise is a Software Engineering and Entrepreneurship student at <strong>Cavendish University Uganda</strong>, with a track record of shipping real products across web development, UI/UX design, digital branding, and software engineering.</p>
+          <p class="about-text">The work speaks for itself — 7 live deployments, a consumer beverage brand with over 1,000 units sold, and a consistent ability to take an idea from zero to market. That's what separates a developer from someone who actually understands business.</p>
+          <p class="about-text">As founder and director of <strong>Kelvin Foods and Beverages</strong>, Kelvin built the <strong>Mr Freezit</strong> brand from the ground up — product, packaging, marketing, and distribution.</p>
+          <blockquote class="about-quote">
+            <span class="quote-mark">"</span>
+            A taste of home wherever you are.
+            <cite>— Mr Freezit Brand Slogan</cite>
+          </blockquote>
+          <div class="about-tags">
+            <span class="tag">🇿🇼 Zimbabwean</span>
+            <span class="tag">🎓 Cavendish University Uganda</span>
+            <span class="tag">💡 Founder</span>
+            <span class="tag">🛠 Engineer</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-card-grid">
+            <div class="about-card">
+              <div class="ac-icon">💻</div>
+              <h3>Web Development</h3>
+              <p>Production-grade websites and web apps — fast, accessible, and built to scale.</p>
+            </div>
+            <div class="about-card">
+              <div class="ac-icon">🎨</div>
+              <h3>UI/UX Design</h3>
+              <p>Interfaces that feel premium and convert — design with purpose, not decoration.</p>
+            </div>
+            <div class="about-card">
+              <div class="ac-icon">🚀</div>
+              <h3>Entrepreneurship</h3>
+              <p>Real products taken to market — from concept and branding to launch and sales.</p>
+            </div>
+            <div class="about-card">
+              <div class="ac-icon">📦</div>
+              <h3>Branding</h3>
+              <p>Brand identities and packaging that command attention and build trust.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">What I work <span class="accent">with</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">🖥</span>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span>
+            <span class="pill">React.js</span><span class="pill">Next.js</span><span class="pill">Tailwind CSS</span>
+            <span class="pill">ShadCN UI</span><span class="pill">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">⚙️</span>
+            <h3>Backend Development</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Node.js</span><span class="pill">API Integration</span>
+            <span class="pill">Database Management</span><span class="pill">Authentication Systems</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">💬</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Python</span><span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">🎨</span>
+            <h3>UI/UX & Design</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Figma</span><span class="pill">Modern UI Design</span>
+            <span class="pill">Branding Design</span><span class="pill">Product Packaging</span>
+            <span class="pill">User Experience Design</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="sc-header">
+            <span class="sc-icon">🛠</span>
+            <h3>Tools & Technologies</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Git & GitHub</span><span class="pill">PowerShell</span>
+            <span class="pill">SQLite</span><span class="pill">BeautifulSoup</span>
+            <span class="pill">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">Work I've <span class="accent">shipped</span></h2>
+      <p class="section-sub">Seven live products. Real clients. Real problems solved.</p>
+      <div class="projects-grid">
+
+        <div class="project-card" data-index="0">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190147.png" alt="GetSkin Beauty" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://getskinbeauty.vercel.app/" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Beauty</span><span class="pc-tag">E-commerce</span></div>
+            <h3 class="pc-title">GetSkin Beauty</h3>
+            <p class="pc-desc">A modern beauty and skincare e-commerce platform with elegant product showcasing and seamless user experience.</p>
+            <a href="https://getskinbeauty.vercel.app/" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="1">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190218.png" alt="Afro Retro Games" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://afro-retro-games.vercel.app/" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Gaming</span><span class="pc-tag">Entertainment</span></div>
+            <h3 class="pc-title">Afro Retro Games</h3>
+            <p class="pc-desc">An African-themed retro gaming platform celebrating culture through interactive digital entertainment.</p>
+            <a href="https://afro-retro-games.vercel.app/" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="2">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190303.png" alt="Aura Uganda" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://aura-uganda.vercel.app/" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Business</span><span class="pc-tag">Uganda</span></div>
+            <h3 class="pc-title">Aura Uganda</h3>
+            <p class="pc-desc">A professional business website for a Ugandan brand, featuring modern design and compelling brand storytelling.</p>
+            <a href="https://aura-uganda.vercel.app/" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="3">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190319.png" alt="BuildMart" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://build-mart-gilt.vercel.app/" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Construction</span><span class="pc-tag">Marketplace</span></div>
+            <h3 class="pc-title">BuildMart</h3>
+            <p class="pc-desc">A construction materials marketplace connecting buyers and suppliers with a clean, functional interface.</p>
+            <a href="https://build-mart-gilt.vercel.app/" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="4">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190344.png" alt="Pollicy" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://pollicy-one.vercel.app/" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Policy</span><span class="pc-tag">Tech</span></div>
+            <h3 class="pc-title">Pollicy</h3>
+            <p class="pc-desc">A tech-policy platform with a clean, professional design focused on data-driven governance and digital rights.</p>
+            <a href="https://pollicy-one.vercel.app/" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="5">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190810.png" alt="DriveEase" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://driveease-rho.vercel.app/" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Transport</span><span class="pc-tag">SaaS</span></div>
+            <h3 class="pc-title">DriveEase</h3>
+            <p class="pc-desc">A vehicle rental and transport management platform with intuitive booking flows and modern UI.</p>
+            <a href="https://driveease-rho.vercel.app/" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="6">
+          <div class="pc-img-wrap">
+            <img src="Screenshot 2026-05-16 190710.png" alt="CUU Portal" class="pc-img" loading="lazy" />
+            <div class="pc-overlay">
+              <a href="https://cuu-portal.vercel.app/login" target="_blank" rel="noopener" class="pc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Site
+              </a>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-tags"><span class="pc-tag">Education</span><span class="pc-tag">Portal</span></div>
+            <h3 class="pc-title">CUU Student Portal</h3>
+            <p class="pc-desc">A university student portal for Cavendish University Uganda — authentication, dashboards, and academic management.</p>
+            <a href="https://cuu-portal.vercel.app/login" target="_blank" rel="noopener" class="pc-cta">View Project →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-label">04 — Services</div>
+      <h2 class="section-title">What I can <span class="accent">deliver</span></h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="srv-num">01</div>
+          <div class="srv-icon">🌐</div>
+          <h3>Website Development</h3>
+          <ul>
+            <li>Modern UI/UX Design</li>
+            <li>Business Websites</li>
+            <li>Portfolio Websites</li>
+            <li>E-commerce Websites</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="srv-num">02</div>
+          <div class="srv-icon">🎨</div>
+          <h3>Branding & Design</h3>
+          <ul>
+            <li>Brand Identity Design</li>
+            <li>Packaging Design</li>
+            <li>Logo & Visual Systems</li>
+            <li>Digital Branding</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="srv-num">03</div>
+          <div class="srv-icon">⚙️</div>
+          <h3>Web App Development</h3>
+          <ul>
+            <li>Full-Stack Web Apps</li>
+            <li>API Integration</li>
+            <li>Database Setup</li>
+            <li>Authentication Systems</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="srv-num">04</div>
+          <div class="srv-icon">📱</div>
+          <h3>Mobile App Concepts</h3>
+          <ul>
+            <li>Mobile UI Design</li>
+            <li>App Prototyping</li>
+            <li>UX Flows</li>
+            <li>Figma Mockups</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label">05 — Experience & Education</div>
+      <h2 class="section-title">My <span class="accent">track record</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <div class="tl-meta">Experience</div>
+            <h3>Founder & Director</h3>
+            <h4>Kelvin Foods and Beverages</h4>
+            <p>Built and scaled the <strong>Mr Freezit</strong> beverage brand — product development, packaging design, marketing strategy, and distribution. Over 1,000 units sold. This isn't a side project; it's proof of what happens when engineering meets business execution.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <div class="tl-meta">Education</div>
+            <h3>Bachelor's Degree</h3>
+            <h4>Cavendish University Uganda</h4>
+            <p>Software Engineering & Entrepreneurship — a deliberate combination. The technical depth to build anything, the business acumen to know what's worth building.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACHIEVEMENTS -->
+      <div class="achievements">
+        <h3 class="ach-title">Achievements</h3>
+        <div class="ach-grid">
+          <div class="ach-item">
+            <div class="ach-icon">🏆</div>
+            <p>Launched and sold over <strong>1,000 units</strong> of Mr Freezit — a consumer brand built from scratch</p>
+          </div>
+          <div class="ach-item">
+            <div class="ach-icon">💻</div>
+            <p><strong>7 live deployments</strong> — real products, real users, real results</p>
+          </div>
+          <div class="ach-item">
+            <div class="ach-icon">🎓</div>
+            <p>Studying <strong>Software Engineering & Entrepreneurship</strong> — the rare combination that builds companies, not just code</p>
+          </div>
+          <div class="ach-item">
+            <div class="ach-icon">🎨</div>
+            <p>End-to-end <strong>branding and packaging</strong> for a physical consumer product — design that sells</p>
+          </div>
+          <div class="ach-item">
+            <div class="ach-icon">🤖</div>
+            <p>Actively building expertise in <strong>AI-powered systems</strong> and next-generation digital products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <h2 class="section-title">Have a project? <span class="accent">Let's talk.</span></h2>
+      <p class="section-sub">If you have a serious project that needs serious execution, this is the right place to start.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Email</span>
+              <a href="mailto:magumisekelvin2023@gmail.com" class="ci-value">magumisekelvin2023@gmail.com</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">Phone</span>
+              <a href="tel:+256759055133" class="ci-value">+256 759 055 133</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/magumise-kelvin" target="_blank" rel="noopener" class="ci-value">Magumise Kelvin</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <span class="ci-label">GitHub</span>
+              <a href="https://github.com/Zelvin18" target="_blank" rel="noopener" class="ci-value">github.com/Zelvin18</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What are you building?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your project, timeline, and what you need..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">KM<span class="dot">.</span></div>
+        <p class="footer-copy">© 2026 Kelvin Magumise. Engineered with intent.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Zelvin18" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/magumise-kelvin" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:magumisekelvin2023@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
